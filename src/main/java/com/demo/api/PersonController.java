@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
     @GetMapping()
     public String home() {
-                return "Welcome this is home page"+"<br/>"+"please add /hello/{yourname} in the path <br/> or add /spring to see definition of Spring";
+                return "Welcome this is home page, Please:"+"<br/><br/>"+"- Add <B>/hello/{yourname}</B> in the path <br/> - Add <B>/spring</B> to see definition of Spring";
     }
 
     @GetMapping("/spring")
     public String test() {
-        return "Hello World from Spring"+"<br/> "+ "The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform. ";
+        return "Hello World from Spring"+"<br/><br/> "+ "<B>Definition: </B>The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform. ";
     }
     @GetMapping(path = "/hello/{name}")
     public String message(@PathVariable("name") String name) {
-        return "Hello : "+name+" <br/>"+"Well you have successfully deployed your app";
+        return "Hello : <B>"+name+"</B> <br/><br/>"+"Congratulations, you have successfully deployed your app";
     }
     
 }
