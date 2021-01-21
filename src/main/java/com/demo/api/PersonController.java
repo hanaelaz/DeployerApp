@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
     @GetMapping()
     public String home() {
-                return "this is home page";
+                return "this is home page please add /bonjour/yourname in the path";
     }
 
     @GetMapping("/spring")
