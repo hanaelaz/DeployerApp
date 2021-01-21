@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
     @GetMapping()
     public String home() {
-                return "Welcome this is home page, Please:"+"<br/><br/><br/>"+"- Add <B>/spring</B> in the path to see definition of Spring (https://deployerapplication.herokuapp.com/spring)."+
-                    "<br/><br/>- Add <B>/hello/{yourname}</B> in the path to view your message (https://deployerapplication.herokuapp.com/hello/{name}).";
+                return "Welcome this is home page, Please:"+"<br/><br/><br/>"+"- Add <B>/spring</B> in the path to see definition of Spring like <sup>(https://deployerapplication.herokuapp.com/spring)</sup>."+
+                    "<br/><br/>- Add <B>/hello/{yourname}</B> in the path to view your message like <sup>(https://deployerapplication.herokuapp.com/hello/{name})</sup>.";
     }
 
     @GetMapping("/spring")
